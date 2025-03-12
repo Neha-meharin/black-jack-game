@@ -35,7 +35,7 @@ A simple Blackjack game built using HTML, CSS, and JavaScript. The game allows p
 This project is open-source and available under the MIT License.
 
 ## Hosted link
-
+ https://neha-meharin.github.io/black-jack-game/
 
 Feel free to contribute or enhance the game by submitting pull requests!
 
