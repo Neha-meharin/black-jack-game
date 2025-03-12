@@ -1,0 +1,104 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/table.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background-color: rgba(0, 40, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid goldenrod;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    height: 30px;
+}
+
+#cards-el, #sum-el {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+button {
+    color: #016f32;
+    background: linear-gradient(to bottom, goldenrod, #c9a227);
+    padding: 12px 0;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    width: 180px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #e3c16f, goldenrod);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: #888;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#player-el {
+    font-size: 1.2rem;
+    color: gold;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    button {
+        width: 150px;
+    }
+}
